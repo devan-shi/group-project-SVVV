@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i>Event Management page</i></h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAjtxo2gxVfXG9FGdN1QGTZD_XAdrGDeeEzc_GGgg4uWV_rqkEPn9ttwPpgeEIYQrBs8&usqp=CAU" alt="birthday parties" width="180" height="180">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlKXBuw0Ua-cSC562u5DaPlCnW_r0gDO3dcw&s" alt="anniversary parties" width="180" height="180">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdzsTXjcfOIVm0tgk2SzdpyqjOo7kB8kIc_A&s"alt="business party" width="180" height="180">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX9qIZQJs0lCBmGL0wvufRNd9ohDz9cgBUfg&s"alt="product lanch events" width="180" height="180">
+            <form id="eventForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" placeholder="Enter event name" required>
+            
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" required>
+            
+            <label for="eventDescription">Event Description:</label>
+            <textarea id="eventDescription" placeholder="Enter event description" required></textarea>
+            
+            <button type="submit">Add Event</button>
+        </form>
+
+        <h2>Upcoming Events</h2>
+        <div id="eventList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
